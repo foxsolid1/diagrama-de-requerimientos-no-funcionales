@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: flex; /* Usamos flexbox para organizar las cajas */
+    justify-content: space-between; /* Espacio entre las cajas */
+    flex-direction: row; /* Alineamos las cajas en fila */
+    flex-wrap: nowrap; /* Evitamos que las cajas se envuelvan a la siguiente línea */
+    position: relative; /* Agregamos posición relativa para las flechas */
+}
+
+.box {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 15%; /* Ajustamos el ancho para que quepan mejor en la pantalla */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f7f7f7; /* Agregamos un color de fondo a las cajas */
+}
+
+.box.rendimiento {
+    background-color: #8BC34A; /* Color verde para la caja de rendimiento */
+}
+
+.box.seguridad {
+    background-color: #FF9800; /* Color naranja para la caja de seguridad */
+}
+
+.box.usabilidad {
+    background-color: #2196F3; /* Color azul para la caja de usabilidad */
+}
+
+.box.fiabilidad {
+    background-color: #4CAF50; /* Color verde oscuro para la caja de fiabilidad */
+}
+
+.box.mantenimiento {
+    background-color: #FFC107; /* Color amarillo para la caja de mantenimiento */
+}
+
+.box.portabilidad {
+    background-color: #03A9F4; /* Color azul claro para la caja de portabilidad */
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+/* Agregamos las flechas */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    z-index: 1;
+}
+
+.arrow.rendimiento {
+    left: 90px;
+    background-color: #8BC34A;
+}
+
+.arrow.seguridad {
+    left: 180px;
+    background-color: #FF9800;
+}
+
+.arrow.usabilidad {
+    left: 270px;
+    background-color: #2196F3;
+}
+
+.arrow.fiabilidad {
+    left: 360px;
+    background-color: #4CAF50;
+}
+
+.arrow.mantenimiento {
+    left: 450px;
+    background-color: #FFC107;
+}
+
+.arrow.portabilidad {
+    left: 540px;
+    background-color: #03A9F4;
+}
